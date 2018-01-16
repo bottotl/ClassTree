@@ -15,6 +15,7 @@
 		30F7F6D6200D9B8A008FDA26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F7F6D5200D9B8A008FDA26 /* main.m */; };
 		30F7F6E0200D9B8A008FDA26 /* TestHookTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F7F6DF200D9B8A008FDA26 /* TestHookTimeTests.m */; };
 		30F7F6EB200D9B8A008FDA26 /* TestHookTimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F7F6EA200D9B8A008FDA26 /* TestHookTimeUITests.m */; };
+		30F7F6FA200D9C04008FDA26 /* JFTClassFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F7F6F9200D9C04008FDA26 /* JFTClassFinder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		30F7F6E6200D9B8A008FDA26 /* TestHookTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHookTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F7F6EA200D9B8A008FDA26 /* TestHookTimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHookTimeUITests.m; sourceTree = "<group>"; };
 		30F7F6EC200D9B8A008FDA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F7F6F8200D9C04008FDA26 /* JFTClassFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTClassFinder.h; sourceTree = "<group>"; };
+		30F7F6F9200D9C04008FDA26 /* JFTClassFinder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTClassFinder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				30F7F6D1200D9B8A008FDA26 /* LaunchScreen.storyboard */,
 				30F7F6D4200D9B8A008FDA26 /* Info.plist */,
 				30F7F6D5200D9B8A008FDA26 /* main.m */,
+				30F7F6F8200D9C04008FDA26 /* JFTClassFinder.h */,
+				30F7F6F9200D9C04008FDA26 /* JFTClassFinder.m */,
 			);
 			path = TestHookTime;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30F7F6CB200D9B8A008FDA26 /* ViewController.m in Sources */,
+				30F7F6FA200D9C04008FDA26 /* JFTClassFinder.m in Sources */,
 				30F7F6D6200D9B8A008FDA26 /* main.m in Sources */,
 				30F7F6C8200D9B8A008FDA26 /* AppDelegate.m in Sources */,
 			);
