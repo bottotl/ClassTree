@@ -54,6 +54,7 @@
 		30F7F6EC200D9B8A008FDA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30F7F6F8200D9C04008FDA26 /* JFTClassFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTClassFinder.h; sourceTree = "<group>"; };
 		30F7F6F9200D9C04008FDA26 /* JFTClassFinder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTClassFinder.m; sourceTree = "<group>"; };
+		30F7F6FB200DD37B008FDA26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,7 @@
 				30F7F6D5200D9B8A008FDA26 /* main.m */,
 				30F7F6F8200D9C04008FDA26 /* JFTClassFinder.h */,
 				30F7F6F9200D9C04008FDA26 /* JFTClassFinder.m */,
+				30F7F6FB200DD37B008FDA26 /* README.md */,
 			);
 			path = TestHookTime;
 			sourceTree = "<group>";

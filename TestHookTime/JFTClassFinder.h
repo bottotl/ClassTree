@@ -29,5 +29,6 @@
 - (BOOL)isBundleContainsClass:(Class)aClass;
 
 - (NSArray <JFTClassNode *> *)findLeafNodeWithRootClass:(Class)isa_class;
+- (JFTClassNode *)findDesNode:(JFTClassNode *)tree withClass:(Class)cls;
 
 @end

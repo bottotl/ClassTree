@@ -35,16 +35,16 @@
     
     for (NSBundle *bundle in allBundles) {
         NSString *path = [bundle bundlePath];
-        if ([path containsString:excutableName]) {
+//        if ([path containsString:excutableName]) {
             [bundlesFilter addObject:bundle];
-        }
+//        }
     }
     
     for (NSBundle *bundle in allFrameworks) {
         NSString *path = [bundle bundlePath];
-        if ([path containsString:excutableName]) {
+//        if ([path containsString:excutableName]) {
             [bundlesFilter addObject:bundle];
-        }
+//        }
     }
     return [NSArray arrayWithArray:bundlesFilter];
 }
@@ -94,6 +94,9 @@
             NSString *className = [NSString stringWithUTF8String:class_getName(aClass)];
             JFTClassNode *node = classNodeMap[className];
             
+            if (aClass == NSClassFromString(@"UIViewController")) {
+                
+            }
             // root class
             if (superClass == NULL) {
                 if (aClass == self.rootClass) {

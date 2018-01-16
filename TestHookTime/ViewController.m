@@ -18,14 +18,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    
+    JFTClassFinder *finder = [[JFTClassFinder alloc] initWithRootClass:[NSObject class]];
+    [finder generateClassTree];
+    JFTClassNode *vcNode = [finder findDesNode:finder.tree withClass:[UIViewController class]];
+    [self enumerateClassTree:vcNode usingBlock:^(JFTClassNode *node) {
+        NSLog(@"%@", NSStringFromClass(node.isa_class));
+    }];
+}
+
+- (void)enumerateClassTree:(JFTClassNode *)tree usingBlock:(void(^)(JFTClassNode *node))block {
+    if (!block) return;
+    block(tree);
+    [tree.subNodes enumerateObjectsUsingBlock:^(JFTClassNode * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self enumerateClassTree:obj usingBlock:block];
+    }];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
